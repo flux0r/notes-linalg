@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Theorem: Matrix Entrywise Addition Properties</title>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <article>
+
+      <h1>Theorem: Matrix Entrywise Addition Properties</h1>
+      <p>Let \(\mathcal{M}_S(m, n)\) be an <a href="./definition-matrix-space.html">\(m \times n\) matrix space</a> over \(S\) over
+         an algebraic structure \((S, \circ)\).&#x2003;Let \(A, B \in \mathcal{M}_S(m, n)\).&#x2003;Let \(A + B\) be the <a
+           href="./definition-matrix-entrywise-addition.html">matrix entrywise sum</a> of \(A\) and \(B\).&#x2003;Then</p>
+      <ul>
+        <li>\(+\) is closed on \(\mathcal{M}_S(m, n) \iff \circ\) is closed on \((S, \circ)\)</li>
+        <li>\(+\) is associative on \(\mathcal{M}_S(m, n) \iff \circ\) is associative on \((S, \circ)\)
+        <li>\(+\) is commutative on \(\mathcal{M}_S(m, n) \iff \circ\) is commutative on \((S, \circ)\)
+      </ul>
+
+      <h2>Proof: Closure</h2>
+      <p>Let \([a]_{mn}, [b]_{mn} \in \mathcal{M}_S(m, n)\) and let \([c]_{mn} = [a]_{mn} + [b]_{mn}\).$$\forall i \in [1 \,.\,.\,
+         m], j \in [1 \,.\,.\, n] : c(i, j) = a(i, j) \circ b(i, j).$$\((S, \circ)\) is closed \(\iff c(i, j) \in S\).&#x2003;But,
+         \([c]_{mn}\) has the same <a href="./definition-matrix.html#Dimensions">dimensions</a> as \([a]_{mn}\) and \([b]_{mn}\),
+         from the definition of <a href="./definition-matrix-entrywise-addition.html">matrix entrywise addition</a>, so \([c]_{mn}
+         \in \mathcal{M}_S(m,n)\).&#x2003;Therefore, \((\mathcal{M}_S(m, n), +)\) is closed.&#x2003;The argument reverses, hence the
+         result.</p>
+
+    </article>
+  </body>
+</html>
